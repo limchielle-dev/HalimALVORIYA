@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | ALVORIYA Student Club</title>
+    <meta name="description" content="Register to join the ALVORIYA Student Club. Explore our requirements and submit your application today.">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Registration Specific Styles */
+        .registration-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .requirements-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .requirements-list li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .requirements-list li ion-icon {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.9);
+            font-family: inherit;
+            font-size: 1rem;
+            color: var(--text-color);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#vision">Vision</a></li>
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="registration.html" class="active">Join Us</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Registration Header -->
+    <section id="register-header" style="min-height: 30vh; padding-top: 150px; padding-bottom: 50px; text-align: center;">
+        <div class="fade-in-up">
+            <h1 class="hero-title">Become a <span class="gradient-text">Member</span></h1>
+            <p class="hero-subtitle" style="max-width: 600px; margin: 0 auto;">Ready to innovate the future? Review the requirements below and submit your application to join the ALVORIYA community.</p>
+        </div>
+    </section>
+
+    <!-- Requirements & Form Section -->
+    <section id="registration-content" style="padding-top: 0;">
+        <div class="registration-container">
+            
+            <!-- Requirements -->
+            <div class="glass-panel fade-in-up delay-1" style="margin-bottom: 3rem;">
+                <h2>How to <span class="gradient-text-alt">Join</span> ALVORIYA</h2>
+                <p style="margin-top: 1rem;">Joining ALVORIYA is a straightforward process. We look for passionate students who are ready to contribute and learn. Here is what we expect from our members:</p>
+                <ul class="requirements-list">
+                    <li>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        <strong>Application:</strong> Complete the registration form below with your valid student details.
+                    </li>
+                    <li>
+                        <ion-icon name="school-outline"></ion-icon>
+                        <strong>Academic Standing:</strong> Open to all active students with a passion for technology and leadership.
+                    </li>
+                    <li>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <strong>Engagement:</strong> Enthusiastic participation in at least two club activities per month.
+                    </li>
+                    <li>
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <strong>Interview:</strong> A brief casual meet-and-greet with our board members to get to know you better.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="glass-panel fade-in-up delay-2">
+                <h2 style="margin-bottom: 2rem; text-align: center;">Application <span class="gradient-text">Form</span></h2>
+                <form action="#" method="get" onsubmit="event.preventDefault(); alert('Application submitted successfully! We will contact you soon.'); this.reset();">
+                    
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentID">Student ID</label>
+                            <input type="text" id="studentID" class="form-control" placeholder="12345678" required>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentEmail">Email Address</label>
+                            <input type="email" id="studentEmail" class="form-control" placeholder="john@student.edu" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">The Reason you would join the club</label>
+                        <textarea id="motivation" class="form-control" placeholder="Tell us about your goals and why you want to be part of ALVORIYA..." required></textarea>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px;">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ALVORI<span class="gradient-text">YA</span>.</h4>
+                <p>Empowering the next generation of campus leaders through technology and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#vision">About Us</a></li>
+                    <li><a href="organization.html">Our Board</a></li>
+                    <li><a href="index.html#events">Upcoming Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><ion-icon name="location-outline"></ion-icon> Student Union Bldg, Room 402</li>
+                    <li><ion-icon name="mail-outline"></ion-icon> hello@alvoriya-club.edu</li>
+                    <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> ALVORIYA Student Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
