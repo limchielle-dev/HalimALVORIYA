@@ -11,7 +11,7 @@
     <style>
         /* Registration Specific Styles */
         .registration-container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -35,50 +35,17 @@
             font-size: 1.5rem;
             color: var(--accent-color);
         }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: var(--text-color);
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 1rem;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            background: rgba(255, 255, 255, 0.9);
-            font-family: inherit;
-            font-size: 1rem;
-            color: var(--text-color);
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
     </style>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+        <a href="https://alvoriyagroup-2026.netlify.app" style="text-decoration: none;">
+            <div class="logo">ALVORI<span class="gradient-text">YA</span>.</div>
+        </a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="https://alvoriyagroup-2026.netlify.app">Home</a></li>
             <li><a href="index.html#vision">Vision</a></li>
             <li><a href="index.html#activities">Activities</a></li>
             <li><a href="index.html#events">Events</a></li>
@@ -128,38 +95,49 @@
 
             <!-- Registration Form -->
             <div class="glass-panel fade-in-up delay-2">
-                <h2 style="margin-bottom: 2rem; text-align: center;">Application <span class="gradient-text">Form</span></h2>
-                <form action="#" method="get" onsubmit="event.preventDefault(); alert('Application submitted successfully! We will contact you soon.'); this.reset();">
+                <h2 style="margin-bottom: 2.5rem; text-align: center; font-size: 2rem;">Application <span style="color: #c5a021;">Form</span></h2>
+                <form action="success.html" method="POST" data-netlify="true" name="registration">
                     
                     <div class="grid-2">
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                            <input type="text" id="fullName" name="full_name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
                             <label for="studentID">Student ID</label>
-                            <input type="text" id="studentID" class="form-control" placeholder="12345678" required>
+                            <input type="text" id="studentID" name="student_id" placeholder="12345678" required>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="major">Major / Program Studi</label>
+                            <input type="text" id="major" name="major" placeholder="Information Technology" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="batch">Batch / Angkatan</label>
+                            <input type="text" id="batch" name="batch" placeholder="2024" required>
                         </div>
                     </div>
 
                     <div class="grid-2">
                         <div class="form-group">
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000" required>
+                            <input type="tel" id="phoneNumber" name="phone_number" placeholder="+1 (555) 000-0000" required>
                         </div>
                         <div class="form-group">
                             <label for="studentEmail">Email Address</label>
-                            <input type="email" id="studentEmail" class="form-control" placeholder="john@student.edu" required>
+                            <input type="email" id="studentEmail" name="email" placeholder="john@student.edu" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="motivation">The Reason you would join the club</label>
-                        <textarea id="motivation" class="form-control" placeholder="Tell us about your goals and why you want to be part of ALVORIYA..." required></textarea>
+                        <textarea id="motivation" name="motivation" placeholder="Tell us about your goals and why you want to be part of ALVORIYA..." required></textarea>
                     </div>
 
-                    <div style="text-align: center; margin-top: 2rem;">
-                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px;">Submit Application</button>
+                    <div class="form-submit-container">
+                        <button type="submit" class="btn-submit">Submit Application</button>
                     </div>
                 </form>
             </div>
@@ -177,7 +155,7 @@
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://alvoriyagroup-2026.netlify.app">Home</a></li>
                     <li><a href="index.html#vision">About Us</a></li>
                     <li><a href="organization.html">Our Board</a></li>
                     <li><a href="index.html#events">Upcoming Events</a></li>
@@ -186,8 +164,8 @@
             <div class="footer-section">
                 <h4>Contact Us</h4>
                 <ul>
-                    <li><ion-icon name="location-outline"></ion-icon> Student Union Bldg, Room 402</li>
-                    <li><ion-icon name="mail-outline"></ion-icon> hello@alvoriya-club.edu</li>
+                    <li><ion-icon name="location-outline"></ion-icon> President University</li>
+                    <li><ion-icon name="mail-outline"></ion-icon> Alvoriya@protonmail.com</li>
                     <li><ion-icon name="call-outline"></ion-icon> +62 (856) 9403 - 9829</li>
                 </ul>
                 <div class="social-links">
